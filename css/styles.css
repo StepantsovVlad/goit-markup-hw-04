@@ -351,10 +351,16 @@ body {
   }
   .section-employee .list {
     text-align: center;
-    background-color: #ffffff;
-    Bottom right radius: 4px;
-    Bottom left radius: 4px;
+    background-color: #ffffff; 
+    
   }
+  .section-employee .list{
+    border-radius: 3px;
+    offset: 0px, 1px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+  }
+
   .employee-logo-list {
     display: flex;
     justify-content: center;
@@ -428,6 +434,7 @@ body {
 .content-line {
   display: flex;
   flex-wrap: wrap;
+  
 }
 .portfolio-list {
   padding-top: 20px;
@@ -441,7 +448,13 @@ body {
   margin-right: 30px;
   margin-top: 0;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
+}
+.content-line .list:focus,
+.content-line .list:hover{
+  border: 1px solid rgba(238, 238, 238, 1);
+  offset: 0px, 1px;
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+
 }
 
 .content-line .list:nth-child(3n + 3) {
@@ -496,6 +509,7 @@ color: rgba(33, 33, 33, 1);
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
+    margin-bottom: 0;
   }
   .company-logo-item {
     display: flex;
